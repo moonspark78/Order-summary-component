@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./images/pattern-background-desktop.svg), center, no-repeat;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flexbox {
+    /* border: solid 1px black; */
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 440px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+  /* CARD IMAGE */
+
+.flexbox-imgHaut img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* CARD BODY */
+
+.flexbox-main {
+    text-align: center;
+}
+  
+.title {
+    font-size: 22px;
+    font-weight: 900;
+    padding: 21px 0 12px 0; 
+}
+  
+.text {
+    line-height: 1.6;
+    font-size: 15px;
+    padding: 0 34px 22px 34px;
+}
+/* --------------------OFFRE__________________ */
+
+.offre-droite a {
+    font-weight: 700;
+    font-size: 13px;
+}
+.offre-gauche {
+    display: flex;
+}
+.offre h2 {
+    font-size: 14px;
+}
+
+.offre {
+    background-color: #e1dee0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px 24px 24px;
+    padding: 16px;
+    border-radius: 10px;
+  }
+  .offre-annuel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 19px;
+    gap: 3px;
+    text-align: left;
+    font-size: 11px;
+}
+
+/* BUTTONS */
+
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+  
+.btn{
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 16px;
+    border: none;
+
+}
+.btn-pay{
+    background: #2020ce ; 
+    color: white;
+
+    
+}
+.btn-pay:hover{
+  background-color:#dadada;
+  cursor: pointer;
+}
+.btn-cancel:hover{
+  background-color:#dadada;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 450px) {
+
+    body {
+      background: url(./images/pattern-background-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  
+    .title {
+      font-size:  27px;
+      padding-top: 27px;
+      padding-bottom: 11px;
+    }
+  
+    .text {
+      font-size: 17px;
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+  
+    .offre {
+      margin: 0 48px 32px 48px;
+      padding: 24px;
+    }
+  
+    .offre h2 {
+      font-size: 17px;
+    }
+  
+    .offre p {
+      font-size: 17px;
+    }
+  
+  
+  } 
